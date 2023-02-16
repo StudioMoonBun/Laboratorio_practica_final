@@ -1,0 +1,57 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+
+    <!--LINKS PARA LA FUENTE POPPINS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--LINK PARA EL STYLE DE CSS-->
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <form id="formulario" action="/">
+            <h1>Create Account</h1>
+
+            <!--CAMPO NOMBRE-->
+            <div class="input-control">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text">
+                <div class="error"></div>
+            </div>
+
+            <!--CAMPO EMAIL-->
+            <div class="input-control">
+                <label for="correo">Email</label>
+                <input id="correo" name="correo" type="text">
+                <div class="error"></div>
+            </div>
+
+            <!--CAMPO CLAVE-->
+            <div class="input-control">
+                <label for="clave">Clave</label>
+                <input id="clave" name="clave" type="password">
+                <div class="error"></div>
+            </div>
+
+            <!--CAMPO CONFIRMACIÓN CLAVE-->
+            <div class="input-control">
+                <label for="clave2">Confirme su clave</label>
+                <input id="clave2"name="clave2" type="password">
+                <div class="error"></div>
+            </div>
+
+            <!--BOTON ENVIAR-->
+            <button type="submit" id="enviando">Enviar</button>
+        </form>
+    </div>
+     <!--LINK PARA EL ARCHIVO DE JAVASCRIPT-->
+    <script defer src="./index.js"></script>
+</body>
+</html>
